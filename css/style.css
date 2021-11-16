@@ -33,6 +33,7 @@ main{
 }
 .video-section{
     width:50%;
+    padding:50px;
     height:calc(100vh - 50px);
     /* border:2px solid red; */
     display:flex;
@@ -53,6 +54,7 @@ body {
 .radioco-playButton-paused:before {
     content: "\f04c";
     font-family: 'FontAwesome', sans-serif;
+    margin:auto 0;
 }
 .radioplayer {
     background: #F4F4F4;
@@ -60,20 +62,20 @@ body {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     border-radius: 100px;
-    box-shadow: #ccc 10px 10px 20px;
-    height: 109px;
+  
+    height: 120px;
     khtml-user-select: none;
     moz-user-select: none;
     ms-user-select: none;
     overflow: hidden;
-    padding: 20px;
+   
     user-select: none;
     webkit-touch-callout: none;
     webkit-user-select: none;
-    width: 500px;
+    width: 60%;
 }
 .radioco-playButton {
-    box-shadow: #111 1px 1px 10px;
+   
     color: #fff;
     font-size: 50px;
     margin-left: 10.5%;
@@ -155,7 +157,7 @@ body {
     text-shadow: #fff 1px 1px 50px;
 }
 .radioco-information input[type=range]::-webkit-slider-thumb:hover {
-    box-shadow: #fff 1px 1px 20px;
+   
 }
 .radioco-information input[type=range]:active,
 .information input[type=range]:focus {
@@ -164,4 +166,11 @@ body {
 
 .main-section{
     display:flex;
+  
+}
+.radio-section{
+    padding:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
