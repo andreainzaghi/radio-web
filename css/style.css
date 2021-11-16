@@ -1,0 +1,64 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"] :before{
+    font-family:'Fontawesome',sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    width:100%;
+    height:60px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    color:#fff;
+    list-style: none;
+    font-size: 16px;
+    padding:17px 20px;
+}
+main{
+    background-color: black;
+    height:calc(100vh - 50px);
+   
+    width:100%;
+}
+.video-section{
+    width:50%;
+    height:100%;
+    border:2px solid red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.radioco-playButton-paused:befour{
+    content:"\f04c";
+}
+.radioco-playButton-playing:befour{
+    content:"\f04b";
+}
+.radioco-playButton{
+    color:#273f4c;
+    position:relative;
+    text-align:left;
+    z-index: 2;
+    font-size: 50px;
+}
+.radioco-playButton:active{
+    color: #395939;
+}
+.radioco-playButton-paused{
+    position:absolute;
+   
+}
+.radioco-playButton-playing{
+    position:absolute;
+   
+}
