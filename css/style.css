@@ -56,24 +56,7 @@ body {
     font-family: 'FontAwesome', sans-serif;
     margin:auto 0;
 }
-.radioplayer {
-    background: #F4F4F4;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    border-radius: 100px;
-  
-    height: 120px;
-    khtml-user-select: none;
-    moz-user-select: none;
-    ms-user-select: none;
-    overflow: hidden;
-   
-    user-select: none;
-    webkit-touch-callout: none;
-    webkit-user-select: none;
-    width: 60%;
-}
+
 .radioco-playButton {
    
     color: #fff;
@@ -170,7 +153,19 @@ body {
 }
 .radio-section{
     padding:50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    width:50%;
+    height:calc(100vh - 50px);
+}
+.radioplayer {
+    background: #F4F4F4;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-radius: 100px;
+    position: relative;
+    top:calc(100% - 150px);
+    height: 120px;
+    overflow: hidden;
+    user-select: none;
+    width: 550px;
 }

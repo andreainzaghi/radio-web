@@ -19,8 +19,8 @@
         </head>
         <main>
             <div class="main-section">
-                <div class="video-section">
-                    <img src="img/Background (65).png" alt="" width="350px";>
+                <div class="video-section"  v-for="video in info">
+                   <video :src ="video" style="border:2px solid red"></video>
                 </div>
                 <div class="radio-section">
                     <div class="radioplayer"
@@ -34,6 +34,9 @@
                         data-volume="100" 
                         data-showartwork="false">
                     </div>
+                  
+                  
+
                 </div>
             </div>
         </main>
@@ -41,6 +44,12 @@
         
         </footer> -->
     </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   
+  
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
     <script>
@@ -48,7 +57,8 @@
     $('.radioplayer').radiocoPlayer();
     
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="js/script.js"></script>
+    
+    <!-- video -->
+    
 </body>
 </html>
