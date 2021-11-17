@@ -25,14 +25,23 @@
         </head>
         <main>
             <div class="main-section" >
-                <div class="video-section"  v-for="item in images">
-                    <video width="400" >
-                        <source  :src= "item.videos.large.url" type="video/mp4">
+
+
+
+                <div class="video-section"   >
+                   
+                     
+                    <video width="90"  >
+                        <source :src ="videoRecharge" type="video/mp4">
                        
                       </video>
-                       
-
+                      <div > </div>
+                   
                 </div>
+
+
+
+
                 <div class="radio-section">
                     <div class="radioplayer"
                         data-src="https://s3.radio.co/sc5c9a916c/listen"
