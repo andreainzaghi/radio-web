@@ -36,14 +36,16 @@ main{
     padding:50px;
     height:calc(100vh - 50px);
     /* border:2px solid red; */
-    /* display:flex;
+    display:flex;
     
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
 }
 /* radiobutton */
 video{
-    border:2px solid red;
+    border-radius:50px;
+    border:2px solid rgb(255, 255, 255);
+    margin:auto;
 }
 body {
     background: #fff;
@@ -170,5 +172,7 @@ body {
     height: 120px;
     overflow: hidden;
     user-select: none;
-    width: 550px;
+    width: 90%;
+    margin:auto;
+    border:2px solid #fff;
 }
