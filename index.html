@@ -26,9 +26,11 @@
         <main>
             <div class="main-section" >
                 <div class="video-section"  v-for="item in images">
-                   
-            
-                        {{item.videos.large.url}}
+                    <video width="400" >
+                        <source  :src= "item.videos.large.url" type="video/mp4">
+                       
+                      </video>
+                       
 
                 </div>
                 <div class="radio-section">

@@ -9,7 +9,7 @@
       images :[]
     },
     methods:{
-
+      
     },
 
     mounted: function() {
@@ -27,6 +27,7 @@
         })
         .finally(() => this.loading = false)
         console.log(this.images)
+         
     }
   })
 
