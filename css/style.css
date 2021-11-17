@@ -9,6 +9,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 nav{
     background-color: black;
     width:100%;
@@ -31,21 +32,22 @@ main{
    
     width:100%;
 }
-.video-section{
-    width:50%;
-    padding:50px;
-    height:calc(100vh - 50px);
+/* .video-section{
+    width:100%;
+    
+    height:calc(50vh - 25px);
     /* border:2px solid red; */
-    display:flex;
+  /*  display:flex;
     
     justify-content: center;
     align-items: center; 
-}
+} */
 /* radiobutton */
 video{
     border-radius:50px;
     border:2px solid rgb(255, 255, 255);
-    margin:auto;
+   margin-left:20% ;
+  margin-bottom:50px;
 }
 body {
     background: #fff;
@@ -90,9 +92,8 @@ body {
     display: none;
 }
 .radioco-bg {
-    left: 0px;
-    margin-left: -29px;
-    margin-top: -79px;
+    left: calc(50% - 300px);
+   
     overflow: hidden;
     position: relative;
     top: -100px;
@@ -153,26 +154,27 @@ body {
 }
 
 .main-section{
-    display:flex;
-  
+ padding:60px;
+ width:100%;
+ height:calc(100vh - 50px);
+  height:calc(100vh - 50px);
 }
-.radio-section{
-    padding:50px;
-    width:50%;
-    height:calc(100vh - 50px);
-}
+/* .radio-section{
+    
+    width:100%;
+   
+} */
 .radioplayer {
-    background: #F4F4F4;
+    background: #070606;
     background-position: center center !important;
-    background-repeat: no-repeat !important;
+    background-repeat: repeat !important;
     background-size: cover !important;
     border-radius: 100px;
-    position: relative;
-    top:calc(100% - 150px);
+    margin-top:50px;
     height: 120px;
     overflow: hidden;
     user-select: none;
-    width: 90%;
+    width: 100%;
     margin:auto;
     border:2px solid #fff;
 }
