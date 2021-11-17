@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+       <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -18,9 +24,12 @@
            </nav>
         </head>
         <main>
-            <div class="main-section">
-                <div class="video-section"  v-for="video in info">
-                   <video :src ="video" style="border:2px solid red"></video>
+            <div class="main-section" >
+                <div class="video-section"  v-for="item in images">
+                   
+            
+                        {{item.videos.large.url}}
+
                 </div>
                 <div class="radio-section">
                     <div class="radioplayer"
@@ -44,13 +53,17 @@
         
         </footer> -->
     </div>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
    
-  
+   
+         <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+      <script src="js/script.js"></script>
+    
+
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- radioco -->
     <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
     <script>
     //initialise the plugin with the element
@@ -58,7 +71,8 @@
     
     </script>
     
-    <!-- video -->
+   
     
+
 </body>
 </html>
