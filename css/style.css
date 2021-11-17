@@ -46,8 +46,11 @@ main{
 video{
     border-radius:50px;
     border:2px solid rgb(255, 255, 255);
-   margin-left:20% ;
-  margin-bottom:50px;
+    position:absolute;
+    right:25%;
+    bottom:240px;
+   left:25% ;
+ 
 }
 body {
     background: #fff;
@@ -174,7 +177,13 @@ body {
     height: 120px;
     overflow: hidden;
     user-select: none;
-    width: 100%;
+    
     margin:auto;
     border:2px solid #fff;
+    position:absolute;
+    left:60px;
+    bottom:60px;
+    right:60px;
+
+
 }
