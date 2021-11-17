@@ -1,92 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <!-- google fonts -->
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-       <!-- fontawesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div id="app">
-        <head>
-           
-           <nav>
-               <ul>
-                   <li>Schedule</li>
-                   <li><img src="img/logo2.png" alt="" height=52px></li>
-                   <li>Archive</li>
-               </ul>
-           </nav>
-        </head>
-        <main>
-            <div class="main-section" >
+  <div id="app">
+    <head>
 
-
-
-              
-                   
-                     
-                    <video width="50%":src ="videoRecharge" type="video/mp4"  autoplay>
-                         <!-- <source :src ="videoRecharge" type="video/mp4">  -->
-                        
-                      </video>
-                     
-               
-
-
-
-
-                <div class="radio-section">
-
-
-                    <div class="radioplayer"
-                        data-src="https://s3.radio.co/sc5c9a916c/listen"
-                        data-autoplay="false"
-                        data-playbutton="true"
-                        data-volumeslider="true"
-                        data-elapsedtime="true" 
-                        data-nowplaying="true" 
-                        data-showplayer="true" 
-                        data-volume="100" 
-                        data-showartwork="false">
-                    </div>
-                  
-                  
-
-                </div>
-            </div>
-        </main>
-        <!-- <footer>
-        
-        </footer> -->
+      <nav>
+        <ul>
+          <li>Schedule</li>
+          <li><img src="img/logo2.png" alt="" height=52px></li>
+          <li>Archive</li>
+        </ul>
+      </nav>
+    </head>
+    <main>
+      <div class="main-section" >
+        <video width="50%":src ="videoRecharge" type="video/mp4"  autoplay>
+        </video>
+        <div class="radio-section">
+          <div class="radioplayer"
+          data-src="https://s3.radio.co/sc5c9a916c/listen"
+          data-autoplay="false"
+          data-playbutton="true"
+          data-volumeslider="true"
+          data-elapsedtime="true"
+          data-nowplaying="true"
+          data-showplayer="true"
+          data-volume="100"
+          data-showartwork="false">
+        </div>
+      </div>
     </div>
-   
-   
-         <!-- axios -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-      <script src="js/script.js"></script>
-    
+  </main>
+  <!-- <footer>
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- radioco -->
-    <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
-    <script>
-    //initialise the plugin with the element
-    $('.radioplayer').radiocoPlayer();
-    
-    </script>
-    
-   
-    
+</footer> -->
+</div>
+
+
+<!-- axios -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="js/script.js"></script>
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- radioco -->
+<script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
+<script>
+//initialise the plugin with the element
+$('.radioplayer').radiocoPlayer();
+
+</script>
+
+
+
 
 </body>
 </html>

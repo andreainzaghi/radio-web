@@ -1,189 +1,189 @@
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 [class*="fontawesome-"]:before {
-    font-family: 'FontAwesome', sans-serif;
+  font-family: 'FontAwesome', sans-serif;
 }
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 nav{
-    background-color: black;
-    width:100%;
-    height:60px;
+  background-color: black;
+  width:100%;
+  height:60px;
 }
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav ul li{
-    color:#fff;
-    list-style: none;
-    font-size: 16px;
-    padding:17px 20px;
+  color:#fff;
+  list-style: none;
+  font-size: 16px;
+  padding:17px 20px;
 }
 main{
-    background-color: black;
-    height:calc(100vh - 50px);
-   
-    width:100%;
+  background-color: black;
+  height:calc(100vh - 50px);
+
+  width:100%;
 }
 /* .video-section{
-    width:100%;
-    
-    height:calc(50vh - 25px);
-    /* border:2px solid red; */
-  /*  display:flex;
-    
-    justify-content: center;
-    align-items: center; 
+width:100%;
+
+height:calc(50vh - 25px);
+/* border:2px solid red; */
+/*  display:flex;
+
+justify-content: center;
+align-items: center;
 } */
 /* radiobutton */
 video{
-    border-radius:50px;
-    border:2px solid rgb(255, 255, 255);
-    position:absolute;
-    right:25%;
-    bottom:240px;
-   left:25% ;
- 
+  border-radius:50px;
+  border:2px solid rgb(255, 255, 255);
+  position:absolute;
+  right:25%;
+  bottom:240px;
+  left:25% ;
+
 }
 body {
-    background: #fff;
-    color: #111;
-    font-family: arial;
+  background: #fff;
+  color: #111;
+  font-family: arial;
 }
 .radioco-playButton-playing:before {
-    content: "\f04b";
-    font-family: 'FontAwesome', sans-serif;
+  content: "\f04b";
+  font-family: 'FontAwesome', sans-serif;
 }
 .radioco-playButton-paused:before {
-    content: "\f04c";
-    font-family: 'FontAwesome', sans-serif;
-    margin:auto 0;
+  content: "\f04c";
+  font-family: 'FontAwesome', sans-serif;
+  margin:auto 0;
 }
 
 .radioco-playButton {
-   
-    color: #fff;
-    font-size: 50px;
-    margin-left: 10.5%;
-    position: relative;
-    text-align: left;
-    top: 30px;
-    z-index: 2;
+
+  color: #fff;
+  font-size: 50px;
+  margin-left: 10.5%;
+  position: relative;
+  text-align: left;
+  top: 30px;
+  z-index: 2;
 }
 .radioco-playButton:active {
-    color: #ccc;
+  color: #ccc;
 }
 .radioco-playButton-playing {
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    text-shadow: black 2px 2px 50px;
-    text-size: 150%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  text-shadow: black 2px 2px 50px;
+  text-size: 150%;
 }
 .radioco-playButton-paused {
-    position: absolute;
-    text-shadow: black 2px 2px 50px;
-    text-size: 150%;
+  position: absolute;
+  text-shadow: black 2px 2px 50px;
+  text-size: 150%;
 }
 .radioco-image {
-    display: none;
+  display: none;
 }
 .radioco-bg {
-    left: calc(50% - 300px);
-   
-    overflow: hidden;
-    position: relative;
-    top: -100px;
-    width: 600px;
+  left: calc(50% - 300px);
+
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+  width: 600px;
 }
 .radioco-information {
-    color: #fff;
-    display: block;
-    float: right;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 14px;
-    position: relative;
-    top: 5px;
-    width: 340px;
-    z-index: 1;
+  color: #fff;
+  display: block;
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 14px;
+  position: relative;
+  top: 5px;
+  width: 340px;
+  z-index: 1;
 }
 .radioco-information span {
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
-    display: block;
-    font-weight: bold;
-    letter-spacing: 0px;
-    padding-bottom: 15px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding-bottom: 15px;
 }
 .radioco-information input[type="range"] {
-    background: rgba(255, 255, 255, 0.3);
-    cursor: -webkit-grab;
-    display: block;
-    height: 4px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-top: 20px;
-    outline: 0;
-    webkit-appearance: none;
-    webkit-border-radius: 8px;
-    width: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: -webkit-grab;
+  display: block;
+  height: 4px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-top: 20px;
+  outline: 0;
+  webkit-appearance: none;
+  webkit-border-radius: 8px;
+  width: 100px;
 }
 .radioco-information input[type=range]::-webkit-slider-thumb {
-    background: #ffffff;
-    border: none;
-    border-radius: 10px;
-    height: 15px;
-    webkit-appearance: none;
-    webkit-transition: box-shadow 0.2s;
-    width: 15px;
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  height: 15px;
+  webkit-appearance: none;
+  webkit-transition: box-shadow 0.2s;
+  width: 15px;
 }
 .radioco-nowPlaying {
-    color: rgba(255, 255, 255, .9);
-    font-size: 16px;
-    text-align: left;
-    text-shadow: #fff 1px 1px 50px;
+  color: rgba(255, 255, 255, .9);
+  font-size: 16px;
+  text-align: left;
+  text-shadow: #fff 1px 1px 50px;
 }
 .radioco-information input[type=range]::-webkit-slider-thumb:hover {
-   
+
 }
 .radioco-information input[type=range]:active,
 .information input[type=range]:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .main-section{
- padding:60px;
- width:100%;
- height:calc(100vh - 50px);
+  padding:60px;
+  width:100%;
+  height:calc(100vh - 50px);
   height:calc(100vh - 50px);
 }
 /* .radio-section{
-    
-    width:100%;
-   
+
+width:100%;
+
 } */
 .radioplayer {
-    background: #070606;
-    background-position: center center !important;
-    background-repeat: repeat !important;
-    background-size: cover !important;
-    border-radius: 100px;
-    margin-top:50px;
-    height: 120px;
-    overflow: hidden;
-    user-select: none;
-    
-    margin:auto;
-    border:2px solid #fff;
-    position:absolute;
-    left:60px;
-    bottom:60px;
-    right:60px;
+  background: #070606;
+  background-position: center center !important;
+  background-repeat: repeat !important;
+  background-size: cover !important;
+  border-radius: 100px;
+  margin-top:50px;
+  height: 120px;
+  overflow: hidden;
+  user-select: none;
+
+  margin:auto;
+  border:2px solid #fff;
+  position:absolute;
+  left:60px;
+  bottom:60px;
+  right:60px;
 
 
 }
