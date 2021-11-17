@@ -27,20 +27,26 @@
     </head>
     <main>
       <div class="main-section" >
-        <video width="50%":src ="videoRecharge" type="video/mp4"  autoplay>
-        </video>
-        <div class="radio-section">
-          <div class="radioplayer"
-          data-src="https://s3.radio.co/sc5c9a916c/listen"
-          data-autoplay="false"
-          data-playbutton="true"
-          data-volumeslider="true"
-          data-elapsedtime="true"
-          data-nowplaying="true"
-          data-showplayer="true"
-          data-volume="100"
-          data-showartwork="false">
+          <!-- sopra -->
+        <div class="mainvideo">
+            <div class="videosuplementari"></div>
+            <video :src ="videoRecharge" type="video/mp4"  autoplay>
+            </video>
+            <div class="changevue"></div>
         </div>
+        <!-- sotto -->
+        <div class="radio-section">
+            <div class="radioplayer"
+            data-src="https://s3.radio.co/sc5c9a916c/listen"
+            data-autoplay="false"
+            data-playbutton="true"
+            data-volumeslider="true"
+            data-elapsedtime="true"
+            data-nowplaying="true"
+            data-showplayer="true"
+            data-volume="100"
+            data-showartwork="false">
+            </div>
       </div>
     </div>
   </main>
@@ -71,3 +77,5 @@ $('.radioplayer').radiocoPlayer();
 
 </body>
 </html>
+
+
