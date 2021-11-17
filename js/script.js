@@ -15,9 +15,9 @@
     },
 
     mounted: function() {
-      x = Math.floor((Math.random() * 10) + 1);
+      x = Math.floor((Math.random() * 20) + 1);
       
-       var API_KEY = 'https://pixabay.com/api/videos/?key=23204036-69c0429327c4664dc706ccca6&q=yellow+flowers';
+       var API_KEY = 'https://pixabay.com/api/videos/?key=23204036-69c0429327c4664dc706ccca6&q=yellow+flowers&profile_id='+ x;
       axios
       .get(API_KEY)
       .then((result)=>{
@@ -25,8 +25,8 @@
           
         
         this.videorandom = this.images[x];
-        console.log(x)
-        console.log(this.videorandom.videos.large.url)
+        // console.log(x)
+        // console.log(this.videorandom.videos.large.url)
         this.videoRecharge = this.videorandom.videos.large.url
         })
        
