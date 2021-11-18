@@ -23,7 +23,7 @@
         <ul>
            
            
-         <li class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</li>
+         <li class="tablinks" id="defaultOpen" onclick="openCity(event, 'Schedule')">Schedule</li>
           <li><img src="img/logo2.png" alt="" height=52px></li>
          <li class="tablinks" onclick="openCity(event, 'Archive')">Archive</li>
         
@@ -38,8 +38,7 @@
             <!-- prima -->
             
             <div class="videosuplementari">
-                <h2 style="font-size:14px;text-align:center;background-color:rgb(255, 246, 118);
-            } ;">Scegli il video piu' adatto al tuo MOOD</h2>
+                <h2 style="font-size:14px;text-align:center;background-color:rgb(255, 246, 118);">Scegli il video piu' adatto al tuo MOOD</h2>
                 <div class="videochoose" @click="prova(index)" v-for=" (video,index) in Arraydiecivideo ">
                     <video :src ="video.videos.tiny.url" type="video/mp4"  autoplay class="video2">
 

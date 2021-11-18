@@ -14,7 +14,12 @@
 nav{
   background-color: black;
   width:100%;
-  height:40px;
+  height:90px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
 }
 nav ul {
   display: flex;
@@ -30,8 +35,8 @@ nav ul li{
 }
 main{
   background-color: black;
-  height:calc(100vh - 50px);
-
+  height:calc(100vh - 90px);
+ margin-top:90px;
   width:100%;
 }
 /* .video-section{
@@ -95,9 +100,12 @@ i{
   border-radius:50px;
   border:2px solid rgb(255, 255, 255);
   width:50%;
-  box-shadow: 
-  12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  box-shadow: 12px 12px 16px 0 rgba(99, 99, 99, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
+}
+
  
 }
 .video3{
@@ -219,8 +227,9 @@ body {
 .main-section{
   padding:40px;
   width:100%;
-  height:calc(100vh - 50px);
-  height:calc(100vh - 50px);
+  
+  
+ 
  
 }
 /* .radio-section{
