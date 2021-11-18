@@ -14,7 +14,7 @@
 nav{
   background-color: black;
   width:100%;
-  height:60px;
+  height:40px;
 }
 nav ul {
   display: flex;
@@ -26,6 +26,7 @@ nav ul li{
   list-style: none;
   font-size: 16px;
   padding:17px 20px;
+  cursor: pointer;
 }
 main{
   background-color: black;
@@ -48,49 +49,63 @@ align-items: center;
     
  
   position:absolute;
-  right:60px;
-  bottom:240px;
-  left:60px ;
+  right:40px;
+  bottom:200px;
+  left:40px ;
   
   align-items: center;
   display:flex;
 }
 .videochoose{
   display:flex;
+  border:1px solid grey;
 }
 .descrizione-video{
-  font-size: 9px;
+  font-size: 8px;
   padding:5px;
+  display: flex;
+
+}
+.descrizione-video p{
+  border:1px solid rgb(168, 168, 168);
+  background-color: rgb(255, 246, 118);
 }
 .videosuplementari{
     width:25%;
     height:300px;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
     overflow:hidden;
     overflow: scroll;
+    border: 1px solid rgb(179, 179, 179);
 }
 .changevue{
     width:25%;
     height:300px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
+}
+i{
+  margin:3px;
 }
 .video2{
-  width:50%;
-  
+  width:40%;
+  cursor: pointer;
 }
 .video1{
-   margin:0 60px;
+   margin:0 40px;
   border-radius:50px;
   border:2px solid rgb(255, 255, 255);
   width:50%;
-  box-shadow: 5px 3px 2px #fff;
+  box-shadow: 
+  12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+ 
 }
 .video3{
-  margin:0 60px;
+  margin:0 40px;
  border-radius:50px;
  border:2px solid rgb(255, 255, 255);
  width:50%;
- box-shadow: 5px 3px 2px #fff;
+
 }
 body {
   background: #fff;
@@ -202,7 +217,7 @@ body {
 }
 
 .main-section{
-  padding:60px;
+  padding:40px;
   width:100%;
   height:calc(100vh - 50px);
   height:calc(100vh - 50px);
@@ -224,22 +239,22 @@ width:100%;
   overflow: hidden;
   user-select: none;
   margin:auto;
-  border:2px solid rgb(255, 240, 153);
+  border:2px solid rgb(255, 255, 255);
   position:absolute;
-  left:60px;
-  bottom:60px;
-  right:60px;
-  box-shadow: 5px 3px 2px #fff;
+  left:40px;
+  bottom:40px;
+  right:40px;
+  
  
 }
 .video-supplementari{
     width:20%;
     height:300px;
     position: absolute;
-    bottom:240px;
-    left:60px;
+    bottom:200px;
+    left:40px;
     border:2px solid rgb(255, 240, 153);
-    box-shadow: 5px 3px 2px #fff; 
+     
     border-radius:50px;
 }
 
