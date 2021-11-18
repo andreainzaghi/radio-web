@@ -46,7 +46,7 @@
             <video v-if="currentUser == 0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
 
             </video>
-            <video v-if="currentUser == !0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
+            <video v-else :src ="Arraydiecivideo[currentUser].videos.tiny.url" type="video/mp4"  autoplay class="video3">
 
             </video>
             <!-- terzo -->

@@ -37,6 +37,7 @@ var app = new Vue({
       this.videoRecharge = this.videorandom.videos.large.url
       // videoaside
        this.Arraydiecivideo = this.images.slice(0, 10)
+       
        console.log(this.Arraydiecivideo)
        this.Arraydiecivideo1 =  this.Arraydiecivideo
        console.log(this.Arraydiecivideo1)

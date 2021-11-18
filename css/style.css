@@ -83,6 +83,13 @@ align-items: center;
   width:50%;
   box-shadow: 5px 3px 2px #fff;
 }
+.video3{
+  margin:0 60px;
+ border-radius:50px;
+ border:2px solid rgb(255, 255, 255);
+ width:50%;
+ box-shadow: 5px 3px 2px #fff;
+}
 body {
   background: #fff;
   color: #111;
