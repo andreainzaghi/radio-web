@@ -53,17 +53,30 @@ align-items: center;
  
   display:flex;
 }
+.videochoose{
+  display:flex;
+}
+.descrizione-video{
+  font-size: 9px;
+  padding:5px;
+}
 .videosuplementari{
     width:25%;
-    height:100px;
+    height:300px;
     background-color: rgb(226, 226, 226);
+    overflow:hidden;
+    overflow: scroll;
 }
 .changevue{
     width:25%;
     height:100px;
     background-color: rgb(219, 219, 219);
 }
-video{
+.video2{
+  width:50%;
+  
+}
+.video1{
    margin:0 60px;
   border-radius:50px;
   border:2px solid rgb(255, 255, 255);

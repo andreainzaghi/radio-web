@@ -29,10 +29,30 @@
       <div class="main-section" >
           <!-- sopra -->
         <div class="mainvideo">
-            <div class="videosuplementari"></div>
-            <video :src ="videoRecharge" type="video/mp4"  autoplay>
+            <!-- prima -->
+            <div class="videosuplementari">
+                <div class="videochoose" @click="prova(index)" v-for=" (video,index) in Arraydiecivideo ">
+                    <video :src ="video.videos.tiny.url" type="video/mp4"  autoplay class="video2">
+
+                    </video>
+                    <div class="descrizione-video">
+                        <h2>{{video.tags}}</h2>
+                        <p>{{video.views}}</p>
+                        <p>{{video.dowloads}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- secondo -->
+            <video v-if="currentUser == 0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
+
             </video>
-            <div class="changevue"></div>
+            <video v-if="currentUser == !0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
+
+            </video>
+            <!-- terzo -->
+            <div class="changevue">
+
+            </div>
         </div>
         <!-- sotto -->
         <div class="radio-section">
@@ -60,6 +80,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="js/script.js"></script>
+<!-- <script src="js/video.js"></script> -->
 
 
 <!-- jquery -->
