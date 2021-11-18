@@ -50,7 +50,8 @@ align-items: center;
   right:60px;
   bottom:240px;
   left:60px ;
- 
+  
+  align-items: center;
   display:flex;
 }
 .videochoose{
@@ -69,7 +70,7 @@ align-items: center;
 }
 .changevue{
     width:25%;
-    height:100px;
+    height:300px;
     background-color: rgb(219, 219, 219);
 }
 .video2{
@@ -199,6 +200,7 @@ body {
   width:100%;
   height:calc(100vh - 50px);
   height:calc(100vh - 50px);
+ 
 }
 /* .radio-section{
 
@@ -233,4 +235,44 @@ width:100%;
     border:2px solid rgb(255, 240, 153);
     box-shadow: 5px 3px 2px #fff; 
     border-radius:50px;
+}
+
+
+
+/* multitab */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }

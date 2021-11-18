@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
+  <script src="https://unpkg.com/vue/dist/vue.js"></script> 
+ <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
@@ -19,9 +20,13 @@
 
       <nav>
         <ul>
-          <li>Schedule</li>
+           
+           
+         <li class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</li>
           <li><img src="img/logo2.png" alt="" height=52px></li>
-          <li>Archive</li>
+         <li class="tablinks" onclick="openCity(event, 'Archive')">Archive</li>
+        
+
         </ul>
       </nav>
     </head>
@@ -51,6 +56,16 @@
             </video>
             <!-- terzo -->
             <div class="changevue">
+             
+                <div id="Schedule" class="tabcontent">
+                <h3>Schedule</h3>
+                <p>Schedule page 1</p> 
+                </div>
+
+                <div id="Archive" class="tabcontent">
+                <h3>Archive</h3>
+                <p>Archive page 2</p>
+                </div>
 
             </div>
         </div>
@@ -80,7 +95,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="js/script.js"></script>
-<!-- <script src="js/video.js"></script> -->
+ <script src="js/video.js"></script>
+ 
 
 
 <!-- jquery -->

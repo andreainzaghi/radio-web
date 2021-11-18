@@ -1,7 +1,7 @@
 
 var app = new Vue({
   el: '#app',
-
+  
   data : {
     videoRecharge:null,
     videorandom :null,
@@ -13,8 +13,10 @@ var app = new Vue({
     Arraydiecivideo:[],
     currentUser:0,
      Arraydiecivideo1:[]
+    
+     
   },
-
+  
   methods:{
     prova:function(index){
       this.currentUser=index;
@@ -53,4 +55,5 @@ var app = new Vue({
 
 
   }
+  
 })
