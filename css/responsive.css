@@ -1,5 +1,13 @@
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1580px) {
+  .textarea{
+    display:none;
+  }
+}
 
+@media only screen and (max-width: 1080px) {
+   .textarea{
+     display:none;
+   }
   .mainvideo{
     position:absolute;
     right:20px;

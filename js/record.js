@@ -1,6 +1,7 @@
 var btnStart = document.querySelector('button[name="record"]');
     var btnStop = document.querySelector('button[name="stop"]');
     var audio = document.querySelector('#audio');
+    
     btnStart.addEventListener('click', async () => {
         let stream = await navigator.mediaDevices.getUserMedia({audio: true, video: false});
         let mediaRecorder = new MediaRecorder(stream);
@@ -9,6 +10,7 @@ var btnStart = document.querySelector('button[name="record"]');
         mediaRecorder.ondataavailable = (e)=>{
              chunks.push(e.data);
         }
+
         //function to catch error
         mediaRecorder.onerror = (e)=>{
              alert(e.error);
@@ -21,6 +23,7 @@ var btnStart = document.querySelector('button[name="record"]');
              //pass url into audio tag
              audio.src = url;
         }
+        
         btnStop.addEventListener('click',()=>{
              mediaRecorder.stop();
         })
