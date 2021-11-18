@@ -17,13 +17,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/recordfile.css">
   <title>WebRadioAndreaInzaghi</title>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png"/>
 </head>
 <body>
   <div id="app">
     <div id="myDIV">
-      <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
+color:rgb(173, 208, 255);
+<loader object="#ff9633" color1="rgb(0, 110, 255)" color2="#ffffff" size="5" speed="1.7" bg="lightgrey" objectbg="0044ff" opacity="80" name="circular"></loader>
     </div>
     <head>
       <nav>
@@ -63,17 +65,21 @@
           <!-- terzo -->
           <div class="changevue">
             <div id="Schedule" class="tabcontent">
-              <h3>Schedule</h3>
-              <p>Schedule page 1</p>
+              <h3>Recording Area</h3>
+              <p>Salva e scarica le tue canzoni preferite</p>
               <!-- record -->
-              <audio id="audio" controls></audio>
-              <button name="record">record</button>
-              <button name="stop">stop</button>
+              <div class="recordarea"></div>
+                <audio id="audio" controls></audio>
+              <div class="bottonirec1">
+                <button name="record" class="bottoniaudio">Record</button>
+                <button name="stop" class="bottoniaudio">Stop</button>
+              </div>
               <!-- fine record -->
             </div>
             <div id="Archive" class="tabcontent">
-              <h3>Archive</h3>
-              <p>Archive page 2</p>
+              <h3>Appunti</h3>
+              <p>Scrivi tutte le idee che vorrai portare con te</p>
+              <textarea class="textarea" name="textarea" id="" cols="45" rows="10"></textarea>
             </div>
           </div>
         </div>

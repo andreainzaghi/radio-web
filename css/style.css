@@ -75,13 +75,16 @@ align-items: center;
 }
 .descrizione-video{
   font-size: 8px;
-  padding:5px;
+  padding:6px;
   display: flex;
+  border-radius: 8px;
 
 }
 .descrizione-video p{
   border:1px solid rgb(168, 168, 168);
   background-color: rgb(74, 153, 255);
+  border-radius: 8px;
+  margin:4px;
 }
 .videosuplementari{
   width:25%;
@@ -101,6 +104,7 @@ align-items: center;
 }
 i{
   margin:3px;
+  color:#fff;
 }
 .video2{
   width:40%;

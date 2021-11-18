@@ -1,0 +1,28 @@
+audio{
+    width:90%;
+    height:50px;
+    margin-left:5%;
+}
+
+.bottoniaudio{
+    width:45%;
+    height:50px;
+    background-color: rgb(66, 126, 255);
+    border:none;
+    border-radius:10px;
+   color:#fff;
+
+}
+.recordarea{
+    width:100%;
+    padding:10px;
+    display:block;
+}
+.bottonirec1{
+    margin:  3%;
+    margin-left:7%;
+}
+
+
+
+
