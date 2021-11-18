@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://unpkg.com/vue-ui-preloader"></script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-ui-preloader/dist/loader.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-ui-preloader/dist/loader.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
-  <script src="https://unpkg.com/vue/dist/vue.js"></script> 
- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -22,89 +22,89 @@
 
 </head>
 <body>
-    
+
   <div id="app">
     <div id="myDIV">
-        <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
-      </div>
+      <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
+    </div>
     <head>
 
       <nav>
         <ul>
-           
-           
-         <li class="tablinks" id="defaultOpen" onclick="openCity(event, 'Schedule')">Schedule</li>
+
+
+          <li class="tablinks" id="defaultOpen" onclick="openCity(event, 'Schedule')">Schedule</li>
           <li><img src="img/logo4.png" alt="" height=52px></li>
-         <li class="tablinks" onclick="openCity(event, 'Archive')">Archive</li>
-        
+          <li class="tablinks" onclick="openCity(event, 'Archive')">Archive</li>
+
 
         </ul>
       </nav>
       <div class="scroll-information">
-         
+
       </div>
     </head>
- 
+
     <main>
-      
+
       <div class="main-section" >
-          <!-- sopra -->
+        <!-- sopra -->
         <div class="mainvideo">
-            <!-- prima -->
-            
-            <div class="videosuplementari">
-                <h2 style="font-size:14px;text-align:center;background-color: rgb(72, 151, 255);">Scegli il video piu' adatto al tuo MOOD</h2>
-                <div class="videochoose" @click="prova(index)" v-for=" (video,index) in Arraydiecivideo ">
-                    <video :src ="video.videos.tiny.url" type="video/mp4"  autoplay class="video2">
+          <!-- prima -->
 
-                    </video>
-                    <div class="descrizione-video">
-                        <div><h2>{{video.tags}}</h2></div>
-                        
-                        <div style="display:block ; margin:5px;font-size: 12px;">
-                            <p><i class="fas fa-eye">{{video.views}}</i></p>
-                            <p><i class="fas fa-thumbs-up">{{video.likes}}</i></p>
-                        </div>
-                       
-                        
-                    </div>
+          <div class="videosuplementari">
+            <h2 style="font-size:14px;text-align:center;background-color: rgb(72, 151, 255);">Scegli il video piu' adatto al tuo MOOD</h2>
+            <div class="videochoose" @click="prova(index)" v-for=" (video,index) in Arraydiecivideo ">
+              <video :src ="video.videos.tiny.url" type="video/mp4"  autoplay class="video2">
+
+              </video>
+              <div class="descrizione-video">
+                <div><h2>{{video.tags}}</h2></div>
+
+                <div style="display:block ; margin:5px;font-size: 12px;">
+                  <p><i class="fas fa-eye">{{video.views}}</i></p>
+                  <p><i class="fas fa-thumbs-up">{{video.likes}}</i></p>
                 </div>
+
+
+              </div>
             </div>
-            <!-- secondo -->
-            <video v-if="currentUser == 0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
+          </div>
+          <!-- secondo -->
+          <video v-if="currentUser == 0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
 
-            </video>
-            <video v-else :src ="Arraydiecivideo[currentUser].videos.tiny.url" type="video/mp4"  autoplay class="video3">
+          </video>
+          <video v-else :src ="Arraydiecivideo[currentUser].videos.tiny.url" type="video/mp4"  autoplay class="video3">
 
-            </video>
-            <!-- terzo -->
-            <div class="changevue">
-             
-                <div id="Schedule" class="tabcontent">
-                <h3>Schedule</h3>
-                <p>Schedule page 1</p> 
-                </div>
+          </video>
+          <!-- terzo -->
+          <div class="changevue">
 
-                <div id="Archive" class="tabcontent">
-                <h3>Archive</h3>
-                <p>Archive page 2</p>
-                </div>
-
+            <div id="Schedule" class="tabcontent">
+              <h3>Schedule</h3>
+              <p>Schedule page 1</p>
             </div>
+
+            <div id="Archive" class="tabcontent">
+              <h3>Archive</h3>
+              <p>Archive page 2</p>
+            </div>
+
+          </div>
         </div>
         <!-- sotto -->
         <div class="radio-section">
-            <div class="radioplayer"
-            data-src="https://s3.radio.co/sc5c9a916c/listen"
-            data-autoplay="false"
-            data-playbutton="true"
-            data-volumeslider="true"
-            data-elapsedtime="true"
-            data-nowplaying="true"
-            data-showplayer="true"
-            data-volume="100"
-            data-showartwork="false">
-            </div>
+          <div class="radioplayer"
+          data-src="https://s3.radio.co/sc5c9a916c/listen"
+          data-autoplay="false"
+          data-playbutton="true"
+          data-volumeslider="true"
+          data-elapsedtime="true"
+          data-nowplaying="true"
+          data-showplayer="true"
+          data-volume="100"
+          data-showartwork="false">
+        </div>
       </div>
     </div>
   </main>
@@ -118,15 +118,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="js/script.js"></script>
- <script src="js/video.js"></script>
- <script>
-     var clock = setInterval(timingloop, 8000);
+<script src="js/video.js"></script>
+<script>
+var clock = setInterval(timingloop, 8000);
 
-    function timingloop(){
-      var element = document.getElementById("myDIV");
-      element.classList.add("displaynone");
-    }
- </script>
+function timingloop(){
+  var element = document.getElementById("myDIV");
+  element.classList.add("displaynone");
+}
+</script>
 
 
 <!-- jquery -->
@@ -144,5 +144,3 @@ $('.radioplayer').radiocoPlayer();
 
 </body>
 </html>
-
-

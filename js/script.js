@@ -1,14 +1,9 @@
 
-
-
-
 Vue.use(loader)
-
-
 
 var app = new Vue({
   el: '#app',
-  
+
   data : {
     videoRecharge:null,
     videorandom :null,
@@ -19,14 +14,14 @@ var app = new Vue({
     images :[],
     Arraydiecivideo:[],
     currentUser:0,
-     Arraydiecivideo1:[],
-     show: true
-    
-     
+    Arraydiecivideo1:[],
+    show: true
+
+
   },
   components:{
     loader:loader
-    },
+  },
   methods:{
     prova:function(index){
       this.currentUser=index;
@@ -34,25 +29,25 @@ var app = new Vue({
   },
 
   mounted: function() {
-  
+
     x = Math.floor((Math.random() * 10) + 1);
-   
+
     var API_KEY = 'https://pixabay.com/api/videos/?key=23204036-69c0429327c4664dc706ccca6&q=ocean+dolphin&profile_id='+ x;
     axios
 
     .get(API_KEY)
     .then((result)=>{
       this.images = result.data.hits;
-      
+
       this.videorandom = this.images[x];
       // console.log(x)
       // console.log(this.videorandom.videos.large.url)
       this.videoRecharge = this.videorandom.videos.large.url
       // videoaside
-       this.Arraydiecivideo = this.images.slice(0, 15)
-       
+      this.Arraydiecivideo = this.images.slice(0, 15)
+
       //  console.log(this.Arraydiecivideo)
-       this.Arraydiecivideo1 =  this.Arraydiecivideo
+      this.Arraydiecivideo1 =  this.Arraydiecivideo
       //  console.log(this.Arraydiecivideo1)
 
     })
@@ -66,5 +61,5 @@ var app = new Vue({
 
 
   }
-  
+
 })
