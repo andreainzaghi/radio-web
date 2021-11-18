@@ -81,7 +81,7 @@ align-items: center;
 }
 .descrizione-video p{
   border:1px solid rgb(168, 168, 168);
-  background-color: rgb(255, 245, 112);
+  background-color: rgb(74, 153, 255);
 }
 .videosuplementari{
     width:25%;
@@ -271,7 +271,7 @@ width:100%;
     position: absolute;
     bottom:200px;
     left:40px;
-    border:2px solid rgb(255, 240, 153);
+    border:2px solid  rgb(108, 172, 255);
      
     border-radius:50px;
 }

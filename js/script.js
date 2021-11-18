@@ -30,10 +30,6 @@ var app = new Vue({
   methods:{
     prova:function(index){
       this.currentUser=index;
-    },
-    stopLooping:function(){
-      var element = document.getElementById("myDIV");
-      element.classList.add("displaynone");
     }
   },
 
@@ -41,7 +37,7 @@ var app = new Vue({
   
     x = Math.floor((Math.random() * 10) + 1);
    
-    var API_KEY = 'https://pixabay.com/api/videos/?key=23204036-69c0429327c4664dc706ccca6&q=yellow+flowers&profile_id='+ x;
+    var API_KEY = 'https://pixabay.com/api/videos/?key=23204036-69c0429327c4664dc706ccca6&q=ocean+dolphin&profile_id='+ x;
     axios
 
     .get(API_KEY)
@@ -55,9 +51,9 @@ var app = new Vue({
       // videoaside
        this.Arraydiecivideo = this.images.slice(0, 10)
        
-       console.log(this.Arraydiecivideo)
+      //  console.log(this.Arraydiecivideo)
        this.Arraydiecivideo1 =  this.Arraydiecivideo
-       console.log(this.Arraydiecivideo1)
+      //  console.log(this.Arraydiecivideo1)
 
     })
 
