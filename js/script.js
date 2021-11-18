@@ -1,4 +1,11 @@
 
+
+
+
+Vue.use(loader)
+
+
+
 var app = new Vue({
   el: '#app',
   
@@ -12,18 +19,26 @@ var app = new Vue({
     images :[],
     Arraydiecivideo:[],
     currentUser:0,
-     Arraydiecivideo1:[]
+     Arraydiecivideo1:[],
+     show: true
     
      
   },
-  
+  components:{
+    loader:loader
+    },
   methods:{
     prova:function(index){
       this.currentUser=index;
+    },
+    stopLooping:function(){
+      var element = document.getElementById("myDIV");
+      element.classList.add("displaynone");
     }
   },
 
   mounted: function() {
+  
     x = Math.floor((Math.random() * 10) + 1);
    
     var API_KEY = 'https://pixabay.com/api/videos/?key=23204036-69c0429327c4664dc706ccca6&q=yellow+flowers&profile_id='+ x;

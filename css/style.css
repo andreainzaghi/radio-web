@@ -10,7 +10,9 @@
   box-sizing: border-box;
   font-family: 'Shippori Antique B1', sans-serif;
 }
-
+.displaynone{
+  display:none;
+}
 nav{
   background-color: black;
   width:100%;
@@ -26,12 +28,17 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
+
 nav ul li{
   color:#fff;
   list-style: none;
-  font-size: 16px;
+  font-size: 20px;
   padding:17px 20px;
   cursor: pointer;
+  
+}
+nav ul li:hover{
+ border-bottom: 1px solid white;
 }
 main{
   background-color: black;
@@ -64,29 +71,31 @@ align-items: center;
 .videochoose{
   display:flex;
   border:1px solid grey;
+  justify-content: space-between;
 }
 .descrizione-video{
   font-size: 8px;
   padding:5px;
   display: flex;
-
+  
 }
 .descrizione-video p{
   border:1px solid rgb(168, 168, 168);
-  background-color: rgb(255, 246, 118);
+  background-color: rgb(255, 245, 112);
 }
 .videosuplementari{
     width:25%;
     height:300px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(224, 224, 224);
     overflow:hidden;
     overflow: scroll;
-    border: 1px solid rgb(179, 179, 179);
+    border: 2px solid rgb(255, 255, 255);
 }
 .changevue{
     width:25%;
     height:300px;
-    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(218, 218, 218);
 }
 i{
   margin:3px;
@@ -97,7 +106,7 @@ i{
 }
 .video1{
    margin:0 40px;
-  border-radius:50px;
+  border-radius:20px;
   border:2px solid rgb(255, 255, 255);
   width:50%;
   /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
@@ -107,7 +116,7 @@ i{
 }
 
  
-}
+
 .video3{
   margin:0 40px;
  border-radius:50px;
@@ -225,8 +234,8 @@ body {
 }
 
 .main-section{
-  padding:40px;
-  width:100%;
+ 
+  
   
   
  
