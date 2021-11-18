@@ -16,7 +16,10 @@
  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>WebRadioAndreaInzaghi</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png"/>
+
 </head>
 <body>
     
@@ -56,8 +59,9 @@
 
                     </video>
                     <div class="descrizione-video">
-                        <h2>{{video.tags}}</h2>
-                        <div style="display:block ; margin:5px;">
+                        <div><h2>{{video.tags}}</h2></div>
+                        
+                        <div style="display:block ; margin:5px;font-size: 12px;">
                             <p><i class="fas fa-eye">{{video.views}}</i></p>
                             <p><i class="fas fa-thumbs-up">{{video.likes}}</i></p>
                         </div>
