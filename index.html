@@ -19,77 +19,57 @@
   <link rel="stylesheet" href="css/responsive.css">
   <title>WebRadioAndreaInzaghi</title>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png"/>
-
 </head>
 <body>
-
   <div id="app">
     <div id="myDIV">
       <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
     </div>
     <head>
-
       <nav>
         <ul>
-
-
           <li class="tablinks" id="defaultOpen" onclick="openCity(event, 'Schedule')">Schedule</li>
           <li><img src="img/logo4.png" alt="" height=52px></li>
           <li class="tablinks" onclick="openCity(event, 'Archive')">Archive</li>
-
-
         </ul>
       </nav>
       <div class="scroll-information">
-
       </div>
     </head>
-
     <main>
-
       <div class="main-section" >
         <!-- sopra -->
         <div class="mainvideo">
           <!-- prima -->
-
           <div class="videosuplementari">
             <h2 style="font-size:14px;text-align:center;background-color: rgb(72, 151, 255);">Scegli il video piu' adatto al tuo MOOD</h2>
             <div class="videochoose" @click="prova(index)" v-for=" (video,index) in Arraydiecivideo ">
               <video :src ="video.videos.tiny.url" type="video/mp4"  autoplay class="video2">
-
               </video>
               <div class="descrizione-video">
                 <div><h2>{{video.tags}}</h2></div>
-
                 <div style="display:block ; margin:5px;font-size: 12px;">
                   <p><i class="fas fa-eye">{{video.views}}</i></p>
                   <p><i class="fas fa-thumbs-up">{{video.likes}}</i></p>
                 </div>
-
-
               </div>
             </div>
           </div>
           <!-- secondo -->
           <video v-if="currentUser == 0" :src ="videoRecharge" type="video/mp4"  autoplay class="video1">
-
           </video>
           <video v-else :src ="Arraydiecivideo[currentUser].videos.tiny.url" type="video/mp4"  autoplay class="video3">
-
           </video>
           <!-- terzo -->
           <div class="changevue">
-
             <div id="Schedule" class="tabcontent">
               <h3>Schedule</h3>
               <p>Schedule page 1</p>
             </div>
-
             <div id="Archive" class="tabcontent">
               <h3>Archive</h3>
               <p>Archive page 2</p>
             </div>
-
           </div>
         </div>
         <!-- sotto -->
@@ -109,11 +89,8 @@
     </div>
   </main>
   <!-- <footer>
-
 </footer> -->
 </div>
-
-
 <!-- axios -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -121,14 +98,11 @@
 <script src="js/video.js"></script>
 <script>
 var clock = setInterval(timingloop, 8000);
-
 function timingloop(){
   var element = document.getElementById("myDIV");
   element.classList.add("displaynone");
 }
 </script>
-
-
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!-- radioco -->
@@ -136,11 +110,6 @@ function timingloop(){
 <script>
 //initialise the plugin with the element
 $('.radioplayer').radiocoPlayer();
-
 </script>
-
-
-
-
 </body>
 </html>
